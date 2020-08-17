@@ -17,3 +17,4 @@ Scenario: Compute parking slots to reserve for visiting specialists
   parking slots are available.
   Then: Parking slot reserved for that specialist,
   number of available parking slots updated.
+  
