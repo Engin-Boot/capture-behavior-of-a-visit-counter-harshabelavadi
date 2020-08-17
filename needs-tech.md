@@ -1,9 +1,16 @@
 # Visit-counter technical needs
 
-Scenario: Recover across restarts of the server that runs the visit-counter
+Scenario: Recover across restarts of the server
+that runs the visit-counter
 
-Given: server is down, there is a backup server, backup server is active. When: the server restarts, server sends request to backup server to get visitor count data. Then:"visitor count" data is retrieved. 
+  Given: Server is down, there is a backup server,
+  backup server is active.
+  When: Server restarts,
+  server sends request to backup server to get visitor count data.
+  Then: Visitor count data gets retrieved.
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
-Given: sensor is not active. When: a visitor visits the hospital. Then: count visitors manually.
+  Given: Sensor is not active.
+  When: Visitor visits the hospital.
+  Then: Count visitors manually.
