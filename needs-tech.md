@@ -13,5 +13,4 @@ Scenario: Reconcile counts if the sensor is offline for a while
 
   Given: Sensor is not active.
   When: Visitor visits the hospital.
-  Then: Count visitors manually.
-  
+  Then: Count visitors manually.  
